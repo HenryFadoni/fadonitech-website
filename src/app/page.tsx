@@ -103,7 +103,7 @@ export default function Home() {
                 </h3>
                 <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
                   Our flagship FinOps service combines financial accountability with operational excellence. 
-                  We don't just reduce costs – we optimize your entire cloud strategy for sustainable growth.
+                  We don&apos;t just reduce costs – we optimize your entire cloud strategy for sustainable growth.
                 </p>
                 <ul className="space-y-3 text-gray-600 dark:text-gray-300">
                   <li className="flex items-start">
@@ -481,7 +481,7 @@ export default function Home() {
               What Our Clients Say
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-400 max-w-4xl mx-auto">
-              Real feedback from clients who have experienced the process transformation and operational optimization I bring to every project.
+              Real feedback from clients who have experienced the process transformation and operational optimization we bring to every project.
             </p>
           </div>
 
@@ -517,7 +517,7 @@ export default function Home() {
                   ⭐⭐⭐⭐⭐
                 </div>
                 <p className="text-gray-600 dark:text-gray-400 italic leading-relaxed">
-                  "Henry was an amazing addition to our team. He was always super productive and communicative. Happy to recommend him to whoever needs an experienced developer to boost their project."
+                  &ldquo;Henry was an amazing addition to our team. He was always super productive and communicative. Happy to recommend him to whoever needs an experienced developer to boost their project.&rdquo;
                 </p>
               </div>
             </div>
@@ -537,7 +537,7 @@ export default function Home() {
                   ⭐⭐⭐⭐⭐
                 </div>
                 <p className="text-gray-600 dark:text-gray-400 italic leading-relaxed">
-                  "Definitely a good experience, we had our pipeline crowded and our team was not getting much done. Henry got us on track and we were able to deliver just on time."
+                  &ldquo;Definitely a good experience, we had our pipeline crowded and our team was not getting much done. Henry got us on track and we were able to deliver just on time.&rdquo;
                 </p>
               </div>
             </div>
@@ -557,7 +557,7 @@ export default function Home() {
                   ⭐⭐⭐⭐⭐
                 </div>
                 <p className="text-gray-600 dark:text-gray-400 italic leading-relaxed">
-                  "Henry proved to be a great asset to us, he was always available for any emergencies and upcoming demands. We were stunned to see his results and work. Highly recommend!"
+                  &ldquo;Henry proved to be a great asset to us, he was always available for any emergencies and upcoming demands. We were stunned to see his results and work. Highly recommend!&rdquo;
                 </p>
               </div>
             </div>
@@ -577,7 +577,7 @@ export default function Home() {
                   ⭐⭐⭐⭐⭐
                 </div>
                 <p className="text-gray-600 dark:text-gray-400 italic leading-relaxed">
-                  "Impressive, Henry was our first hire, he built our entire infrastructure. Thanks to him, we were able to finish the product and sell our business!"
+                  &ldquo;Impressive, Henry was our first hire, he built our entire infrastructure. Thanks to him, we were able to finish the product and sell our business!&rdquo;
                 </p>
               </div>
             </div>
@@ -597,7 +597,7 @@ export default function Home() {
                   ⭐⭐⭐⭐⭐
                 </div>
                 <p className="text-gray-600 dark:text-gray-400 italic leading-relaxed">
-                  "I loved working with Henry, he is a great developer and guide. We were concerned about the risks and delays, and he was always honest and transparent."
+                  &ldquo;I loved working with Henry, he is a great developer and guide. We were concerned about the risks and delays, and he was always honest and transparent.&rdquo;
                 </p>
               </div>
             </div>
@@ -617,7 +617,7 @@ export default function Home() {
                   ⭐⭐⭐⭐⭐
                 </div>
                 <p className="text-gray-600 dark:text-gray-400 italic leading-relaxed">
-                  "Henry's technical expertise and problem-solving skills are exceptional. He delivered our project ahead of schedule while maintaining the highest quality standards."
+                  &ldquo;Henry&apos;s technical expertise and problem-solving skills are exceptional. He delivered our project ahead of schedule while maintaining the highest quality standards.&rdquo;
                 </p>
               </div>
             </div>
@@ -641,7 +641,7 @@ export default function Home() {
               How We Helped Pickups Build & Sell Their Business
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-400 max-w-4xl mx-auto">
-              A startup needed to build their entire infrastructure from scratch. Here's how our comprehensive 
+              A startup needed to build their entire infrastructure from scratch. Here&apos;s how our comprehensive 
               cloud solutions and expert guidance helped them achieve their goals and successfully exit.
             </p>
           </div>
@@ -739,7 +739,7 @@ export default function Home() {
                   ⭐⭐⭐⭐⭐
                 </div>
                 <p className="text-gray-600 dark:text-gray-400 italic text-center leading-relaxed">
-                  "Impressive, Henry was our first hire, he built our entire infrastructure. Thanks to him, we were able to finish the product and sell our business!"
+                  &ldquo;Impressive, Henry was our first hire, he built our entire infrastructure. Thanks to him, we were able to finish the product and sell our business!&rdquo;
                 </p>
               </div>
             </div>
