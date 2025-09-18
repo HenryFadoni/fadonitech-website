@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "FadoniTech - Cloud Support & FinOps for Series C Startups",
-  description: "Reduce cloud risk and cost with FadoniTech's expert cloud support and FinOps solutions for Series C startups and growing companies.",
+  title: "FadoniTech - AI Automation for Non-Tech Businesses",
+  description: "Streamline operations with AI-powered automation. We help non-tech businesses integrate SaaS tools and eliminate repetitive tasks to unlock efficiency and growth.",
 };
 
 export default function RootLayout({

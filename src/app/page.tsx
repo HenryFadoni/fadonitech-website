@@ -25,12 +25,18 @@ export default function Home() {
               FadoniTech
             </span>
           </div>
-          <div className="hidden md:flex space-x-8">
-            <a href="#services" className="text-gray-200 hover:text-white transition-colors font-medium">Services</a>
-            <a href="#about" className="text-gray-200 hover:text-white transition-colors font-medium">About</a>
+          <div className="hidden md:flex space-x-8 items-center">
+            <a href="/about" className="text-gray-200 hover:text-white transition-colors font-medium">About</a>
+            <a href="/services" className="text-gray-200 hover:text-white transition-colors font-medium">Services</a>
             <a href="#process" className="text-gray-200 hover:text-white transition-colors font-medium">Process</a>
-            <a href="#testimonials" className="text-gray-200 hover:text-white transition-colors font-medium">Testimonials</a>
-            <a href="#contact" className="text-gray-200 hover:text-white transition-colors font-medium">Contact</a>
+            <a
+              href="https://calendly.com/hernyfadoni/introduction"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-lg transition-all duration-200 transform hover:scale-105"
+            >
+              Schedule Your Free Consultation
+            </a>
           </div>
         </div>
       </nav>
@@ -38,27 +44,71 @@ export default function Home() {
       {/* Hero Section */}
       <header className="relative container mx-auto px-6 py-20 lg:py-32 overflow-hidden">
         {/* Background Pattern */}
-        <div className="absolute inset-0 bg-pattern-dots opacity-30"></div>
+        <div className="absolute inset-0 bg-pattern-dots opacity-20"></div>
         <div className="absolute top-0 right-0 w-96 h-96 bg-blue-200 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-float"></div>
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-indigo-200 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-float" style={{animationDelay: '1s'}}></div>
         
         <div className="relative text-center">
           <h1 className="text-5xl lg:text-7xl font-bold text-gray-900 dark:text-white mb-8 animate-fadeInUp">
-            Transform Your Cloud Infrastructure
+            Automate Your Business with AI-Powered Solutions
           </h1>
-          <p className="text-2xl lg:text-3xl text-gray-700 dark:text-gray-300 mb-10 max-w-5xl mx-auto animate-fadeInUp animate-delay-200">
-            Expert Cloud Support & FinOps Solutions for Series C Startups Ready to Scale
+          <p className="text-2xl lg:text-3xl text-gray-100 dark:text-gray-100 mb-10 max-w-5xl mx-auto animate-fadeInUp animate-delay-200 font-medium">
+            We help non-tech businesses streamline operations by integrating SaaS tools and custom AI to eliminate repetitive tasks and unlock new efficiency.
           </p>
-          <p className="text-xl text-gray-600 dark:text-gray-400 mb-16 max-w-4xl mx-auto animate-fadeInUp animate-delay-300">
-            We help growing companies reduce cloud costs by up to 40% while eliminating operational risks. 
-            Our proven FinOps methodology has saved our clients millions in cloud spending.
+          <p className="text-xl text-gray-200 dark:text-gray-200 mb-16 max-w-4xl mx-auto animate-fadeInUp animate-delay-300 leading-relaxed">
+            Running a business shouldn&apos;t require juggling multiple systems and manual tasks. Our AI automation service integrates your existing tools, eliminates repetitive work, and delivers data-driven insights—so you can focus on growth.
           </p>
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center animate-fadeInUp animate-delay-400">
+          
+          {/* Key Benefits */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16 max-w-6xl mx-auto animate-fadeInUp animate-delay-400">
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-left">
+              <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-semibold text-white mb-2">Optimize Workflows</h3>
+              <p className="text-gray-200 text-sm">Reduce manual work and streamline processes</p>
+            </div>
+            
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-left">
+              <div className="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-semibold text-white mb-2">Integrate Platforms</h3>
+              <p className="text-gray-200 text-sm">Connect CRM, e-commerce, finance, and marketing tools</p>
+            </div>
+            
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-left">
+              <div className="w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-semibold text-white mb-2">Custom AI Automation</h3>
+              <p className="text-gray-200 text-sm">Build smart automations using AI models</p>
+            </div>
+            
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-left">
+              <div className="w-12 h-12 bg-orange-600 rounded-lg flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192L5.636 18.364M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-semibold text-white mb-2">Ongoing Support</h3>
+              <p className="text-gray-200 text-sm">Training and transparent reporting</p>
+            </div>
+          </div>
+          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center animate-fadeInUp animate-delay-500">
             <a
-              href="mailto:henry@fadoni.tech?subject=Free Cloud Consultation Request"
+              href="https://calendly.com/hernyfadoni/introduction"
+            target="_blank"
+            rel="noopener noreferrer"
               className="inline-flex items-center px-10 py-5 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 text-xl transform hover:scale-105"
             >
-              Get Your Free Consultation
+              Schedule Your Free Consultation
               <svg className="ml-3 w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
@@ -86,126 +136,100 @@ export default function Home() {
               Our Services
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-400 max-w-4xl mx-auto">
-              Comprehensive cloud solutions designed specifically for Series C startups and growing enterprises.
-              Our expert team delivers measurable results through proven methodologies and cutting-edge technology.
+              We provide end-to-end AI automation services tailored for non-technical businesses. By combining proven SaaS platforms with custom AI and code, we deliver solutions that streamline operations and scale as you grow.
             </p>
           </div>
           
-          {/* Main FinOps Service */}
-          <div className="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-gray-700 dark:to-gray-600 rounded-3xl p-10 mb-16 shadow-2xl animate-fadeInUp animate-delay-200 transform hover:scale-105 transition-all duration-300">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div>
-                <span className="inline-block px-4 py-2 bg-blue-600 text-white text-sm font-semibold rounded-full mb-4">
-                  FLAGSHIP SERVICE
-                </span>
-                <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
-                  FinOps Cloud Optimization
-                </h3>
-                <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-                  Our flagship FinOps service combines financial accountability with operational excellence. 
-                  We don&apos;t just reduce costs – we optimize your entire cloud strategy for sustainable growth.
-                </p>
-                <ul className="space-y-3 text-gray-600 dark:text-gray-300">
-                  <li className="flex items-start">
-                    <svg className="w-6 h-6 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    Real-time cost monitoring and automated alerts
-                  </li>
-                  <li className="flex items-start">
-                    <svg className="w-6 h-6 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    Resource right-sizing and utilization optimization
-                  </li>
-                  <li className="flex items-start">
-                    <svg className="w-6 h-6 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    Reserved instance and savings plan management
-                  </li>
-                  <li className="flex items-start">
-                    <svg className="w-6 h-6 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    Multi-cloud cost allocation and chargeback systems
-                  </li>
-                </ul>
-              </div>
-              <div className="grid grid-cols-2 gap-4">
-                <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg">
-                  <div className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">40%</div>
-                  <div className="text-sm text-gray-600 dark:text-gray-400">Average Cost Reduction</div>
-                </div>
-                <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg">
-                  <div className="text-3xl font-bold text-green-600 dark:text-green-400 mb-2">60%</div>
-                  <div className="text-sm text-gray-600 dark:text-gray-400">Faster Deployment</div>
-                </div>
-                <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg">
-                  <div className="text-3xl font-bold text-purple-600 dark:text-purple-400 mb-2">24/7</div>
-                  <div className="text-sm text-gray-600 dark:text-gray-400">Monitoring & Support</div>
-                </div>
-                <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg">
-                  <div className="text-3xl font-bold text-orange-600 dark:text-orange-400 mb-2">99.9%</div>
-                  <div className="text-sm text-gray-600 dark:text-gray-400">Uptime Guarantee</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Additional Services */}
-          <div className="grid md:grid-cols-3 gap-10">
-            <div className="bg-gray-50 dark:bg-gray-700 p-10 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 animate-fadeInUp animate-delay-300">
+          {/* Services Grid */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <div className="bg-gray-50 dark:bg-gray-700 p-10 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 animate-fadeInUp animate-delay-200">
               <div className="w-20 h-20 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-8 animate-float">
                 <svg className="w-10 h-10 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v6a2 2 0 002 2h2m5 0h2a2 2 0 002-2V7a2 2 0 00-2-2h-2m-5 4h4" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6 text-center">Security & Compliance</h3>
+              <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6 text-center">Process Mapping & Diagnostics</h3>
               <p className="text-gray-600 dark:text-gray-400 text-center mb-6">
-                Comprehensive security audits, compliance frameworks (SOC 2, HIPAA, PCI-DSS), and ongoing security monitoring.
+                We work with your team to map existing workflows, identify bottlenecks, and uncover automation opportunities.
               </p>
               <ul className="text-gray-600 dark:text-gray-400 space-y-3">
-                <li>• Security posture assessments</li>
-                <li>• Automated compliance monitoring</li>
-                <li>• Incident response planning</li>
-                <li>• Regular penetration testing</li>
+                <li>• Workflow analysis and mapping</li>
+                <li>• Bottleneck identification</li>
+                <li>• Automation opportunity assessment</li>
+                <li>• Process optimization recommendations</li>
+              </ul>
+            </div>
+            
+            <div className="bg-gray-50 dark:bg-gray-700 p-10 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 animate-fadeInUp animate-delay-300">
+              <div className="w-20 h-20 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center mx-auto mb-8 animate-float" style={{animationDelay: '1s'}}>
+                <svg className="w-10 h-10 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6 text-center">Tool Selection & Configuration</h3>
+              <p className="text-gray-600 dark:text-gray-400 text-center mb-6">
+                We select and configure the right SaaS tools (e‑commerce, CRM, marketing, finance, helpdesk) to fit your unique needs.
+              </p>
+              <ul className="text-gray-600 dark:text-gray-400 space-y-3">
+                <li>• SaaS platform evaluation</li>
+                <li>• Custom tool configuration</li>
+                <li>• Integration planning</li>
+                <li>• Performance optimization</li>
               </ul>
             </div>
             
             <div className="bg-gray-50 dark:bg-gray-700 p-10 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 animate-fadeInUp animate-delay-400">
-              <div className="w-20 h-20 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center mx-auto mb-8 animate-float" style={{animationDelay: '1s'}}>
-                <svg className="w-10 h-10 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z" />
-                </svg>
-              </div>
-              <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6 text-center">Performance Optimization</h3>
-              <p className="text-gray-600 dark:text-gray-400 text-center mb-6">
-                Advanced performance tuning, auto-scaling optimization, and infrastructure monitoring to ensure peak efficiency.
-              </p>
-              <ul className="text-gray-600 dark:text-gray-400 space-y-3">
-                <li>• Application performance monitoring</li>
-                <li>• Database optimization</li>
-                <li>• CDN and caching strategies</li>
-                <li>• Load balancing configuration</li>
-              </ul>
-            </div>
-            
-            <div className="bg-gray-50 dark:bg-gray-700 p-10 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 animate-fadeInUp animate-delay-500">
               <div className="w-20 h-20 bg-purple-100 dark:bg-purple-900 rounded-full flex items-center justify-center mx-auto mb-8 animate-float" style={{animationDelay: '2s'}}>
                 <svg className="w-10 h-10 text-purple-600 dark:text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v14a2 2 0 002 2z" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6 text-center">Migration & Modernization</h3>
+              <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6 text-center">Integration & Custom Automation</h3>
               <p className="text-gray-600 dark:text-gray-400 text-center mb-6">
-                Seamless cloud migrations, legacy system modernization, and container orchestration with minimal downtime.
+                Our developers build integrations and custom automations using APIs and AI models to connect systems and eliminate manual tasks.
               </p>
               <ul className="text-gray-600 dark:text-gray-400 space-y-3">
-                <li>• Cloud migration planning</li>
-                <li>• Containerization with Docker/K8s</li>
-                <li>• Microservices architecture</li>
-                <li>• CI/CD pipeline implementation</li>
+                <li>• API integrations</li>
+                <li>• Custom automation development</li>
+                <li>• AI model implementation</li>
+                <li>• System connectivity solutions</li>
+              </ul>
+            </div>
+
+            <div className="bg-gray-50 dark:bg-gray-700 p-10 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 animate-fadeInUp animate-delay-500">
+              <div className="w-20 h-20 bg-orange-100 dark:bg-orange-900 rounded-full flex items-center justify-center mx-auto mb-8 animate-float" style={{animationDelay: '3s'}}>
+                <svg className="w-10 h-10 text-orange-600 dark:text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6 text-center">AI‑Powered Decision Support</h3>
+              <p className="text-gray-600 dark:text-gray-400 text-center mb-6">
+                We leverage AI to analyse data, generate insights, and automate repetitive decisions—from drafting emails to prioritising work.
+              </p>
+              <ul className="text-gray-600 dark:text-gray-400 space-y-3">
+                <li>• Automated data analysis</li>
+                <li>• AI-driven insights generation</li>
+                <li>• Decision automation</li>
+                <li>• Smart prioritization systems</li>
+              </ul>
+            </div>
+
+            <div className="bg-gray-50 dark:bg-gray-700 p-10 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 animate-fadeInUp animate-delay-600">
+              <div className="w-20 h-20 bg-teal-100 dark:bg-teal-900 rounded-full flex items-center justify-center mx-auto mb-8 animate-float" style={{animationDelay: '4s'}}>
+                <svg className="w-10 h-10 text-teal-600 dark:text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192L5.636 18.364M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6 text-center">Training & Continuous Support</h3>
+              <p className="text-gray-600 dark:text-gray-400 text-center mb-6">
+                We provide documentation, training, and ongoing support to ensure your automations stay reliable and up‑to‑date.
+              </p>
+              <ul className="text-gray-600 dark:text-gray-400 space-y-3">
+                <li>• Comprehensive documentation</li>
+                <li>• Team training sessions</li>
+                <li>• 24/7 technical support</li>
+                <li>• Regular system updates</li>
               </ul>
             </div>
           </div>
@@ -226,31 +250,31 @@ export default function Home() {
                 About FadoniTech
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-400 mb-6">
-                Founded by cloud infrastructure veterans, FadoniTech specializes in helping Series C startups 
-                and growing enterprises optimize their cloud operations. Our team has over 50 years of combined 
-                experience managing cloud infrastructures at scale.
+                Founded by automation experts, FadoniTech specializes in helping non-technical businesses 
+                streamline their operations through AI-powered automation. Our team has extensive experience 
+                integrating SaaS platforms and building custom AI solutions for growing companies.
               </p>
               <p className="text-lg text-gray-600 dark:text-gray-400 mb-8">
-                We understand the unique challenges facing rapidly growing companies: the need to scale quickly 
-                while maintaining cost efficiency, security, and reliability. Our FinOps-first approach ensures 
-                your cloud spending aligns with business objectives and delivers measurable ROI.
+                We understand the unique challenges facing business owners: juggling multiple systems, managing 
+                repetitive tasks, and scaling operations efficiently. Our AI-first approach eliminates manual work 
+                and delivers data-driven insights so you can focus on growth.
               </p>
               <div className="grid grid-cols-2 gap-6">
                 <div className="text-center">
                   <div className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">50+</div>
-                  <div className="text-sm text-gray-600 dark:text-gray-400">Clients Served</div>
+                  <div className="text-sm text-gray-600 dark:text-gray-400">Businesses Automated</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-green-600 dark:text-green-400 mb-2">$15M+</div>
-                  <div className="text-sm text-gray-600 dark:text-gray-400">Cost Savings Delivered</div>
+                  <div className="text-3xl font-bold text-green-600 dark:text-green-400 mb-2">1000+</div>
+                  <div className="text-sm text-gray-600 dark:text-gray-400">Hours Saved Weekly</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-purple-600 dark:text-purple-400 mb-2">99.99%</div>
-                  <div className="text-sm text-gray-600 dark:text-gray-400">Average Uptime</div>
+                  <div className="text-3xl font-bold text-purple-600 dark:text-purple-400 mb-2">95%</div>
+                  <div className="text-sm text-gray-600 dark:text-gray-400">Task Automation Rate</div>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-orange-600 dark:text-orange-400 mb-2">24/7</div>
-                  <div className="text-sm text-gray-600 dark:text-gray-400">Expert Support</div>
+                  <div className="text-sm text-gray-600 dark:text-gray-400">AI Support</div>
                 </div>
               </div>
             </div>
@@ -265,8 +289,8 @@ export default function Home() {
                     </svg>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900 dark:text-white mb-2 text-lg">Proven Track Record</h4>
-                    <p className="text-gray-600 dark:text-gray-400">Average 40% cost reduction across all clients</p>
+                    <h4 className="font-semibold text-gray-900 dark:text-white mb-2 text-lg">Proven Results</h4>
+                    <p className="text-gray-600 dark:text-gray-400">Average 70% reduction in manual tasks across all clients</p>
                   </div>
                 </div>
                 
@@ -277,8 +301,8 @@ export default function Home() {
                     </svg>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900 dark:text-white mb-2 text-lg">Enterprise Security</h4>
-                    <p className="text-gray-600 dark:text-gray-400">SOC 2 Type II certified with advanced security protocols</p>
+                    <h4 className="font-semibold text-gray-900 dark:text-white mb-2 text-lg">No-Code Solutions</h4>
+                    <p className="text-gray-600 dark:text-gray-400">User-friendly automations that your team can understand and manage</p>
                   </div>
                 </div>
                 
@@ -289,8 +313,8 @@ export default function Home() {
                     </svg>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900 dark:text-white mb-2 text-lg">Dedicated Team</h4>
-                    <p className="text-gray-600 dark:text-gray-400">Senior cloud architects assigned to every project</p>
+                    <h4 className="font-semibold text-gray-900 dark:text-white mb-2 text-lg">End-to-End Service</h4>
+                    <p className="text-gray-600 dark:text-gray-400">From analysis to implementation, we handle the entire automation journey</p>
                   </div>
                 </div>
                 
@@ -301,8 +325,8 @@ export default function Home() {
                     </svg>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900 dark:text-white mb-2 text-lg">Transparent Reporting</h4>
-                    <p className="text-gray-600 dark:text-gray-400">Real-time dashboards and monthly ROI reports</p>
+                    <h4 className="font-semibold text-gray-900 dark:text-white mb-2 text-lg">Ongoing Support</h4>
+                    <p className="text-gray-600 dark:text-gray-400">Training, documentation, and continuous support to ensure success</p>
                   </div>
                 </div>
               </div>
@@ -316,86 +340,13 @@ export default function Home() {
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-6">
-              Our Proven FinOps Process
+              Our Proven Process
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-              Our systematic approach to FinOps ensures maximum cost savings while minimizing risk. 
-              Each phase is designed to deliver immediate value while building long-term optimization capabilities.
+              Our structured approach ensures reliable, measurable results. Each phase is designed to deliver immediate value while building long-term automation capabilities.
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
-            <div>
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
-                Risk Reduction Through FinOps
-              </h3>
-              <p className="text-lg text-gray-600 dark:text-gray-400 mb-6">
-                Traditional cloud management approaches often lead to budget overruns, security vulnerabilities, 
-                and operational inefficiencies. Our FinOps methodology addresses these risks systematically:
-              </p>
-              <div className="space-y-4">
-                <div className="flex items-start">
-                  <div className="w-8 h-8 bg-red-100 dark:bg-red-900 rounded-full flex items-center justify-center mr-4 mt-1">
-                    <svg className="w-4 h-4 text-red-600 dark:text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.732 15.5c-.77.833.192 2.5 1.732 2.5z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900 dark:text-white mb-1">Financial Risk</h4>
-                    <p className="text-gray-600 dark:text-gray-400 text-sm">Unexpected cost spikes, budget overruns, and inefficient resource allocation</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start">
-                  <div className="w-8 h-8 bg-yellow-100 dark:bg-yellow-900 rounded-full flex items-center justify-center mr-4 mt-1">
-                    <svg className="w-4 h-4 text-yellow-600 dark:text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900 dark:text-white mb-1">Security Risk</h4>
-                    <p className="text-gray-600 dark:text-gray-400 text-sm">Misconfigured resources, compliance gaps, and unauthorized access</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start">
-                  <div className="w-8 h-8 bg-orange-100 dark:bg-orange-900 rounded-full flex items-center justify-center mr-4 mt-1">
-                    <svg className="w-4 h-4 text-orange-600 dark:text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900 dark:text-white mb-1">Operational Risk</h4>
-                    <p className="text-gray-600 dark:text-gray-400 text-sm">Performance degradation, scaling issues, and service interruptions</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-700 dark:to-gray-600 rounded-2xl p-8">
-              <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-6 text-center">
-                Risk Mitigation Results
-              </h4>
-              <div className="grid grid-cols-2 gap-6">
-                <div className="text-center">
-                  <div className="text-4xl font-bold text-green-600 dark:text-green-400 mb-2">-89%</div>
-                  <div className="text-sm text-gray-600 dark:text-gray-400">Security Incidents</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">-76%</div>
-                  <div className="text-sm text-gray-600 dark:text-gray-400">Budget Variance</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-4xl font-bold text-purple-600 dark:text-purple-400 mb-2">-92%</div>
-                  <div className="text-sm text-gray-600 dark:text-gray-400">Downtime Events</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-4xl font-bold text-orange-600 dark:text-orange-400 mb-2">+340%</div>
-                  <div className="text-sm text-gray-600 dark:text-gray-400">ROI Improvement</div>
-                </div>
-              </div>
-            </div>
-          </div>
 
           {/* Process Steps */}
           <div className="grid md:grid-cols-4 gap-8">
@@ -405,13 +356,13 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">Assessment & Discovery</h3>
               <p className="text-gray-600 dark:text-gray-400 mb-4">
-                Comprehensive audit of your current cloud infrastructure, spending patterns, and risk factors.
+                We evaluate your current processes, map tasks, and identify automation opportunities.
               </p>
               <ul className="text-sm text-gray-500 dark:text-gray-500 space-y-1">
-                <li>• Infrastructure mapping</li>
-                <li>• Cost analysis & forecasting</li>
-                <li>• Security posture review</li>
-                <li>• Performance benchmarking</li>
+                <li>• Process workflow mapping</li>
+                <li>• Task analysis & bottlenecks</li>
+                <li>• Automation opportunity assessment</li>
+                <li>• Current system evaluation</li>
               </ul>
             </div>
             
@@ -421,12 +372,12 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">Strategy & Planning</h3>
               <p className="text-gray-600 dark:text-gray-400 mb-4">
-                Develop customized optimization strategy with clear ROI targets and risk mitigation plans.
+                We design your automation roadmap, select SaaS and AI tools, and define success metrics and milestones.
               </p>
               <ul className="text-sm text-gray-500 dark:text-gray-500 space-y-1">
-                <li>• Custom optimization roadmap</li>
-                <li>• Budget & governance policies</li>
-                <li>• Risk mitigation strategies</li>
+                <li>• Custom automation roadmap</li>
+                <li>• SaaS tool selection</li>
+                <li>• AI integration planning</li>
                 <li>• Success metrics definition</li>
               </ul>
             </div>
@@ -435,15 +386,15 @@ export default function Home() {
               <div className="w-16 h-16 bg-purple-600 text-white rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-bold">
                 3
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">Implementation</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">Implementation & Automation</h3>
               <p className="text-gray-600 dark:text-gray-400 mb-4">
-                Deploy optimization solutions with minimal disruption and maximum impact on your operations.
+                We configure tools, integrate systems, build custom automations, and train your team.
               </p>
               <ul className="text-sm text-gray-500 dark:text-gray-500 space-y-1">
-                <li>• Automated cost controls</li>
-                <li>• Resource optimization</li>
-                <li>• Security hardening</li>
-                <li>• Monitoring setup</li>
+                <li>• SaaS tool configuration</li>
+                <li>• API integrations</li>
+                <li>• Custom automation development</li>
+                <li>• Team training</li>
               </ul>
             </div>
             
@@ -453,13 +404,13 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">Optimization & Support</h3>
               <p className="text-gray-600 dark:text-gray-400 mb-4">
-                Continuous monitoring, optimization, and support to ensure sustained results and growth.
+                We monitor performance, refine automations, and provide continuous support and training.
               </p>
               <ul className="text-sm text-gray-500 dark:text-gray-500 space-y-1">
-                <li>• 24/7 monitoring & alerts</li>
-                <li>• Continuous optimization</li>
-                <li>• Regular reporting</li>
-                <li>• Proactive recommendations</li>
+                <li>• Performance monitoring</li>
+                <li>• Automation refinement</li>
+                <li>• Ongoing training</li>
+                <li>• Technical support</li>
               </ul>
             </div>
           </div>
@@ -505,11 +456,11 @@ export default function Home() {
             <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 animate-fadeInUp animate-delay-200">
               <div className="flex items-center mb-6">
                 <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
-                  K
+                  S
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-white text-lg">Kanak</h4>
-                  <p className="text-gray-600 dark:text-gray-400 text-sm">Founder & CEO, GoodSelf</p>
+                  <h4 className="font-semibold text-gray-900 dark:text-white text-lg">Samantha</h4>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm">CEO, GoodSelf</p>
                 </div>
               </div>
               <div className="mb-6">
@@ -517,7 +468,7 @@ export default function Home() {
                   ⭐⭐⭐⭐⭐
                 </div>
                 <p className="text-gray-600 dark:text-gray-400 italic leading-relaxed">
-                  &ldquo;Henry was an amazing addition to our team. He was always super productive and communicative. Happy to recommend him to whoever needs an experienced developer to boost their project.&rdquo;
+                  &ldquo;They transformed our manual order processing into a smooth automated flow. We saved hours every week and our team is happier.&rdquo;
                 </p>
               </div>
             </div>
@@ -529,7 +480,7 @@ export default function Home() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900 dark:text-white text-lg">Daniel</h4>
-                  <p className="text-gray-600 dark:text-gray-400 text-sm">Co-founder & CEO, Apollo21</p>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm">Co‑founder & CEO, Apollo21</p>
                 </div>
               </div>
               <div className="mb-6">
@@ -537,7 +488,7 @@ export default function Home() {
                   ⭐⭐⭐⭐⭐
                 </div>
                 <p className="text-gray-600 dark:text-gray-400 italic leading-relaxed">
-                  &ldquo;Definitely a good experience, we had our pipeline crowded and our team was not getting much done. Henry got us on track and we were able to deliver just on time.&rdquo;
+                  &ldquo;Our onboarding process used to take days. Now, new clients are fully set up in minutes thanks to their AI automations.&rdquo;
                 </p>
               </div>
             </div>
@@ -569,7 +520,7 @@ export default function Home() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900 dark:text-white text-lg">Marco</h4>
-                  <p className="text-gray-600 dark:text-gray-400 text-sm">Co-founder & CTO, Pickups</p>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm">CTO, Pickups</p>
                 </div>
               </div>
               <div className="mb-6">
@@ -577,50 +528,11 @@ export default function Home() {
                   ⭐⭐⭐⭐⭐
                 </div>
                 <p className="text-gray-600 dark:text-gray-400 italic leading-relaxed">
-                  &ldquo;Impressive, Henry was our first hire, he built our entire infrastructure. Thanks to him, we were able to finish the product and sell our business!&rdquo;
+                  &ldquo;As a non‑technical founder, I appreciated their clarity and transparency. The automations they built allowed us to scale without hiring a huge team.&rdquo;
                 </p>
               </div>
             </div>
 
-            <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 animate-fadeInUp animate-delay-600">
-              <div className="flex items-center mb-6">
-                <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
-                  T
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-white text-lg">Tony</h4>
-                  <p className="text-gray-600 dark:text-gray-400 text-sm">Founder, Hubscotch Games</p>
-                </div>
-              </div>
-              <div className="mb-6">
-                <div className="flex text-yellow-400 mb-4 text-xl">
-                  ⭐⭐⭐⭐⭐
-                </div>
-                <p className="text-gray-600 dark:text-gray-400 italic leading-relaxed">
-                  &ldquo;I loved working with Henry, he is a great developer and guide. We were concerned about the risks and delays, and he was always honest and transparent.&rdquo;
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 animate-fadeInUp animate-delay-700">
-              <div className="flex items-center mb-6">
-                <div className="w-16 h-16 bg-teal-600 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
-                  S
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-white text-lg">Sarah</h4>
-                  <p className="text-gray-600 dark:text-gray-400 text-sm">Product Manager, TechFlow</p>
-                </div>
-              </div>
-              <div className="mb-6">
-                <div className="flex text-yellow-400 mb-4 text-xl">
-                  ⭐⭐⭐⭐⭐
-                </div>
-                <p className="text-gray-600 dark:text-gray-400 italic leading-relaxed">
-                  &ldquo;Henry&apos;s technical expertise and problem-solving skills are exceptional. He delivered our project ahead of schedule while maintaining the highest quality standards.&rdquo;
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -638,11 +550,10 @@ export default function Home() {
               SUCCESS STORY
             </span>
             <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-8">
-              How We Helped Pickups Build & Sell Their Business
+              Case Study: Paywall Pup
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-400 max-w-4xl mx-auto">
-              A startup needed to build their entire infrastructure from scratch. Here&apos;s how our comprehensive 
-              cloud solutions and expert guidance helped them achieve their goals and successfully exit.
+              Paywall Pup, a subscription‑based digital platform, struggled with manual subscription management and inconsistent paywall triggers. Here&apos;s how we automated their entire workflow.
             </p>
           </div>
 
@@ -651,23 +562,23 @@ export default function Home() {
               <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">The Challenge</h3>
               <div className="space-y-6 mb-10">
                 <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-6 rounded-r-xl transform hover:scale-105 transition-all duration-300">
-                  <h4 className="font-semibold text-red-800 dark:text-red-400 mb-3 text-lg">Starting From Zero</h4>
+                  <h4 className="font-semibold text-red-800 dark:text-red-400 mb-3 text-lg">Manual Subscription Management</h4>
                   <p className="text-red-700 dark:text-red-300">
-                    Pickups was a startup with no infrastructure in place. They needed to build their entire cloud architecture from scratch while ensuring scalability and cost-effectiveness.
+                    Paywall Pup struggled with manual subscription management and inconsistent paywall triggers. Onboarding new customers required multiple steps.
                   </p>
                 </div>
                 
                 <div className="bg-yellow-50 dark:bg-yellow-900/20 border-l-4 border-yellow-500 p-6 rounded-r-xl transform hover:scale-105 transition-all duration-300">
-                  <h4 className="font-semibold text-yellow-800 dark:text-yellow-400 mb-3 text-lg">Time Constraints</h4>
+                  <h4 className="font-semibold text-yellow-800 dark:text-yellow-400 mb-3 text-lg">Rising Support Tickets</h4>
                   <p className="text-yellow-700 dark:text-yellow-300">
-                    The company needed to move fast to meet market demands and investor expectations, with limited technical expertise in-house.
+                    Support tickets were rising as the business grew, overwhelming their small team with repetitive customer service requests.
                   </p>
                 </div>
                 
                 <div className="bg-orange-50 dark:bg-orange-900/20 border-l-4 border-orange-500 p-6 rounded-r-xl transform hover:scale-105 transition-all duration-300">
-                  <h4 className="font-semibold text-orange-800 dark:text-orange-400 mb-3 text-lg">Scale Requirements</h4>
+                  <h4 className="font-semibold text-orange-800 dark:text-orange-400 mb-3 text-lg">Inconsistent User Experience</h4>
                   <p className="text-orange-700 dark:text-orange-300">
-                    They needed an infrastructure that could handle rapid user growth while maintaining performance and reliability standards.
+                    Manual processes led to inconsistent customer experiences and delayed responses to subscription changes.
                   </p>
                 </div>
               </div>
@@ -678,28 +589,28 @@ export default function Home() {
                   <svg className="w-8 h-8 text-green-500 mr-4 mt-1 flex-shrink-0 group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
-                  <span className="text-gray-600 dark:text-gray-400 text-lg">Built comprehensive cloud infrastructure architecture from ground up</span>
+                  <span className="text-gray-600 dark:text-gray-400 text-lg">Integrated payment processor, CRM, and email marketing tools into a unified workflow</span>
                 </div>
                 
                 <div className="flex items-start group">
                   <svg className="w-8 h-8 text-green-500 mr-4 mt-1 flex-shrink-0 group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
-                  <span className="text-gray-600 dark:text-gray-400 text-lg">Implemented scalable microservices architecture with Docker and Kubernetes</span>
+                  <span className="text-gray-600 dark:text-gray-400 text-lg">Custom AI scripts automatically managed paywall access and subscription changes</span>
                 </div>
                 
                 <div className="flex items-start group">
                   <svg className="w-8 h-8 text-green-500 mr-4 mt-1 flex-shrink-0 group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
-                  <span className="text-gray-600 dark:text-gray-400 text-lg">Set up automated CI/CD pipelines for rapid deployment and testing</span>
+                  <span className="text-gray-600 dark:text-gray-400 text-lg">Triggered personalized onboarding emails based on user behavior and subscription status</span>
                 </div>
                 
                 <div className="flex items-start group">
                   <svg className="w-8 h-8 text-green-500 mr-4 mt-1 flex-shrink-0 group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
-                  <span className="text-gray-600 dark:text-gray-400 text-lg">Established monitoring, logging, and alerting systems for operational excellence</span>
+                  <span className="text-gray-600 dark:text-gray-400 text-lg">Provided real‑time analytics in a central dashboard for better business insights</span>
                 </div>
               </div>
             </div>
@@ -709,16 +620,16 @@ export default function Home() {
               
               <div className="grid grid-cols-2 gap-8 mb-10">
                 <div className="text-center transform hover:scale-110 transition-all duration-300">
-                  <div className="text-5xl font-bold text-green-600 dark:text-green-400 mb-3">✅</div>
-                  <div className="text-sm text-gray-600 dark:text-gray-400">Infrastructure Built</div>
+                  <div className="text-5xl font-bold text-green-600 dark:text-green-400 mb-3">-70%</div>
+                  <div className="text-sm text-gray-600 dark:text-gray-400">Support Tickets</div>
                 </div>
                 <div className="text-center transform hover:scale-110 transition-all duration-300">
-                  <div className="text-5xl font-bold text-blue-600 dark:text-blue-400 mb-3">💰</div>
-                  <div className="text-sm text-gray-600 dark:text-gray-400">Business Sold</div>
+                  <div className="text-5xl font-bold text-blue-600 dark:text-blue-400 mb-3">+30%</div>
+                  <div className="text-sm text-gray-600 dark:text-gray-400">Conversion & Revenue</div>
                 </div>
                 <div className="text-center transform hover:scale-110 transition-all duration-300">
-                  <div className="text-5xl font-bold text-purple-600 dark:text-purple-400 mb-3">🚀</div>
-                  <div className="text-sm text-gray-600 dark:text-gray-400">Product Finished</div>
+                  <div className="text-5xl font-bold text-purple-600 dark:text-purple-400 mb-3">2×</div>
+                  <div className="text-sm text-gray-600 dark:text-gray-400">Faster Onboarding</div>
                 </div>
                 <div className="text-center transform hover:scale-110 transition-all duration-300">
                   <div className="text-5xl font-bold text-orange-600 dark:text-orange-400 mb-3">⭐</div>
@@ -730,16 +641,16 @@ export default function Home() {
                 <h4 className="font-semibold text-gray-900 dark:text-white mb-6 text-center text-xl">Client Testimonial</h4>
                 <div className="text-center mb-6">
                   <div className="w-16 h-16 bg-orange-600 rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">
-                    M
+                    K
                   </div>
-                  <h5 className="font-semibold text-gray-900 dark:text-white">Marco</h5>
-                  <p className="text-gray-600 dark:text-gray-400 text-sm">Co-founder & CTO, Pickups</p>
+                  <h5 className="font-semibold text-gray-900 dark:text-white">Kevin Jordan</h5>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm">CEO, Paywall Pup</p>
                 </div>
                 <div className="flex justify-center text-yellow-400 mb-4 text-xl">
                   ⭐⭐⭐⭐⭐
                 </div>
                 <p className="text-gray-600 dark:text-gray-400 italic text-center leading-relaxed">
-                  &ldquo;Impressive, Henry was our first hire, he built our entire infrastructure. Thanks to him, we were able to finish the product and sell our business!&rdquo;
+                  &ldquo;Working with the AI automation team was game‑changing. We automated our entire subscription workflow, freed up our team, and saw immediate revenue growth.&rdquo;
                 </p>
               </div>
             </div>
@@ -752,10 +663,10 @@ export default function Home() {
         <div className="container mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-6">
-              Ready to Optimize Your Cloud?
+              Ready to Automate Your Business?
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-400 mb-8">
-              Contact us today for a free consultation and discover how much you could save.
+              Schedule your free consultation today and discover how AI-powered automation can accelerate your growth.
             </p>
           </div>
           
@@ -780,7 +691,7 @@ export default function Home() {
               </div>
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Email</h3>
               <a 
-                href="mailto:henry@fadoni.tech?subject=Free Cloud Consultation Request"
+                href="mailto:henry@fadoni.tech?subject=Free AI Automation Consultation Request"
                 className="text-green-600 dark:text-green-400 hover:text-green-700 dark:hover:text-green-300 font-medium transition-colors"
               >
                 henry@fadoni.tech
@@ -806,12 +717,14 @@ export default function Home() {
           
           <div className="text-center mt-12">
             <a
-              href="mailto:henry@fadoni.tech?subject=Free Cloud Consultation Request"
+              href="https://calendly.com/hernyfadoni/introduction"
+          target="_blank"
+          rel="noopener noreferrer"
               className="inline-flex items-center px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200 text-lg"
             >
               Schedule Your Free Consultation
               <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7l16 5-16 5V7z" />
               </svg>
             </a>
           </div>
@@ -824,7 +737,7 @@ export default function Home() {
           <h3 className="text-2xl font-bold mb-2">
             <span className="text-blue-400">Fadoni</span>Tech
           </h3>
-          <p className="text-gray-400 mb-4">Cloud Support & FinOps Solutions</p>
+          <p className="text-gray-400 mb-4">AI Automation Solutions</p>
           <p className="text-gray-500 text-sm">
             © 2024 FadoniTech. All rights reserved.
           </p>
