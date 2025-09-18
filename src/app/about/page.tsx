@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function About() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800">
@@ -5,7 +7,7 @@ export default function About() {
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">
-            <a href="/" className="flex items-center space-x-3">
+            <Link href="/" className="flex items-center space-x-3">
               <div className="w-12 h-8 relative">
                 <svg width="48" height="32" viewBox="0 0 48 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <defs>
@@ -25,10 +27,10 @@ export default function About() {
               <span className="text-2xl font-bold text-white">
                 FadoniTech
               </span>
-            </a>
+            </Link>
           </div>
           <div className="hidden md:flex space-x-8 items-center">
-            <a href="/" className="text-gray-200 hover:text-white transition-colors font-medium">Home</a>
+            <Link href="/" className="text-gray-200 hover:text-white transition-colors font-medium">Home</Link>
             <a href="/about" className="text-white transition-colors font-medium">About</a>
             <a href="/services" className="text-gray-200 hover:text-white transition-colors font-medium">Services</a>
             <a
